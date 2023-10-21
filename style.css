@@ -43,3 +43,11 @@ footer{
     margin-right: auto;
     
 }
+@media (max-width: 768px){
+    header{
+        background-color: aqua;
+    }
+    footer{
+        background-color: aqua;
+    }
+}

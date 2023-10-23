@@ -37,7 +37,7 @@ footer{
 }
 .social{
     display: flex;
-    column-gap: 50px;
+    column-gap: 30px;
     float: right;
     margin-left: auto;
     margin-right: auto;

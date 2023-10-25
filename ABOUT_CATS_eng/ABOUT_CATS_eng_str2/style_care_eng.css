@@ -20,6 +20,10 @@ header{
     margin-right: auto;
     border: 3px solid rgb(85, 50, 19);
 }
+nav{
+    padding: 20px;
+    font-size: 15px;
+}
 article{
     margin-right: auto;
     margin-left: auto;

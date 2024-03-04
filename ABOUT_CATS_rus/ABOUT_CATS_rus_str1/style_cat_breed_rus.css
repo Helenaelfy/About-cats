@@ -66,7 +66,7 @@ footer{
     }
 }
 .row > .column{
-     padding: 0 5px;
+     padding: 0 8px;
 }
 .row ::after{
     content: "";
@@ -75,7 +75,7 @@ footer{
 }
 .column{
     float: left;
-    width: 14%;
+    width: 15%;
 }
 .foto{
     display: none;
@@ -97,6 +97,20 @@ footer{
     width: 90%;
     max-width: 1200px;
 }
+.close{
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.close :hover,
+.close :focus{
+    color: #e48181;
+    text-decoration: none;
+    cursor: pointer;
+}
 .fotoSlider{
     display: none;
 }
@@ -110,8 +124,31 @@ footer{
     margin-top: -50px;
     color: white;
     font-weight: bold;
-    font-size: 25px;    
+    font-size: 20px;   
+    transition: 0.6s ease; 
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 .next{
     right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev :hover,
+.next :hover{
+    background-color: rgba(56, 12, 12, 0.8);
+}
+img.demo{
+    opacity: 0.6;
+}
+:active,
+.demo :hover{
+    opacity: 1;
+}
+img.fotoCats{
+    width: 200px;
+    height: 200px;
+    transition: 0.3s;
+}
+.fotoCats :hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }

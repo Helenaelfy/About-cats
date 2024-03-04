@@ -1,5 +1,3 @@
-let index = 1;
-
 function openSlider()
 {
     document.getElementById("myFoto").style.display = "block";
@@ -8,6 +6,18 @@ function openSlider()
 function closeSlider()
 {
     document.getElementById("myFoto").style.display = "none";
+}
+
+let index = 1;
+showCats(index);
+
+function plusFoto(n)
+{
+    showCats(index += n);
+}
+function numberFoto(n)
+{
+    showCats(index = n);
 }
 
 function showCats(n)
@@ -34,11 +44,4 @@ function showCats(n)
     demo[index - 1].style.display = " active";
 }
 
-function plusFoto(n)
-{
-    index = n;
-    showCats(index);
-}
-
-showCats(index);
 

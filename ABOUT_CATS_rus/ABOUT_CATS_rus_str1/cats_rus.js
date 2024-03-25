@@ -1,47 +1,45 @@
-function openSlider()
+function openSlide()
 {
-    document.getElementById("myFoto").style.display = "block";
+   document.getElementById("gallery").style.display = "block";
 }
-
-function closeSlider()
+function closeSlide()
 {
-    document.getElementById("myFoto").style.display = "none";
+   document.getElementById("gallery").style.display = "none";
 }
 
 let index = 1;
-showCats(index);
+showSliders(index);
 
-function plusFoto(n)
+function plusPhoto(n)
 {
-    showCats(index += n);
+   showSliders(index += n);
 }
-function numberFoto(n)
+function numberPhoto(n)
 {
-    showCats(index = n);
+   showSliders(index = n);
+}
+function showSliders(n)
+{
+let slider = document.getElementsByClassName("slider");
+let demo = document.getElementsByClassName("demo");
+
+if ( n > slider.length)
+{
+   index = 1;
+}
+if ( n < 1)
+{
+   index = slider.length;
 }
 
-function showCats(n)
-{  
-    let foto = document.getElementsByClassName("fotoSlider");
-    let demo = document.getElementsByClassName("demo");
-    if (n > foto.length)
-    {
-        index = 1;
-    }
-    if (n < 1)
-    {
-        index = foto.length;
-    }
-    for (let i = 0; i < foto.length; i++)
-    {
-        foto[i].style.display = "none";
-    }
-    for (let j = 0; j < demo.length; j++)
-    {
-        demo[j].className = demo[j].className.replace(" active", "");
-    }
-    foto[index - 1].style.display = "block";
-    demo[index - 1].style.display = " active";
+for (let i = 0; i < slider.length; i++)
+{
+   slider[i].style.display = "none";
 }
-
-
+for (let j = 0; j < demo.length; j++)
+{
+   demo[j].className = demo[j].className.replace(" active", "");
+}
+slider[index - 1].style.display = "block";
+demo[index - 1].className += " active";
+}

@@ -77,7 +77,7 @@ footer{
     float: left;
     width: 15%;
 }
-.foto{
+.show{
     display: none;
     position: fixed;
     z-index: 1;
@@ -89,7 +89,7 @@ footer{
     overflow: auto;
     background-color:  #f4d29f;
 }
-.foto-content{
+.content{
     position: relative;
     background-color: #c26060;
     margin: auto;
@@ -111,7 +111,7 @@ footer{
     text-decoration: none;
     cursor: pointer;
 }
-.fotoSlider{
+.slider{
     display: none;
 }
 .prev, 
@@ -144,11 +144,11 @@ img.demo{
 .demo :hover{
     opacity: 1;
 }
-img.fotoCats{
+img.cats{
     width: 200px;
     height: 200px;
     transition: 0.3s;
 }
-.fotoCats :hover{
+.cats :hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }

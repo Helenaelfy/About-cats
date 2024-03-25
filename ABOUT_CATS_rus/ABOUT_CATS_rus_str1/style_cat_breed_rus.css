@@ -98,11 +98,11 @@ footer{
     max-width: 1200px;
 }
 .close{
-    color: white;
+    color: rgb(38, 9, 9);
     position: absolute;
     top: 10px;
     right: 25px;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: bold;
 }
 .close :hover,
@@ -122,9 +122,9 @@ footer{
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: white;
+    color:rgb(38, 9, 9);
     font-weight: bold;
-    font-size: 20px;   
+    font-size: 40px;   
     transition: 0.6s ease; 
     border-radius: 0 3px 3px 0;
     user-select: none;

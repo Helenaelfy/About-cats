@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style_cat_breed_eng.css">
 </head>
 <body>
+   <script src="./cats_eng.js"></script>
     <header>
     <img src="/img/images (1).jpg"  alt="A little about cats" width="500px" height="200px">
     <nav>
@@ -26,6 +27,73 @@
    </ul>
     <img src="/img/Без названия.jpg" alt="Cats" width="400px" height="200px">
     </header>
+
+    <div class="row">
+      <div class="column">
+         <img src="/img/Уход за кошкой9.jpg" onclick="openSlide(); numberPhoto(1)" class="cats" alt="cats">
+      </div>
+      <div class="column">
+         <img src="/img/Уход за кошкой8.jpg" onclick="openSlide(); numberPhoto(2)" class="cats" alt="cats">
+      </div>
+      <div class="column">
+         <img src="/img/Уход за кошкой3.jpg" onclick="openSlide(); numberPhoto(3)" class="cats" alt="cats">
+      </div>
+      <div class="column">
+         <img src="/img/Уход за кошкой6.jpg" onclick="openSlide();numberPhoto(4) " class="cats" alt="cats">
+      </div>
+      <div class="column">
+         <img src="/img/Уход за кошкой5.jpg" onclick="openSlide(); numberPhoto(5)" class="cats" alt="cats">
+      </div>
+      <div class="column">
+         <img src="/img/Уход за кошкой4.jpg" onclick="openSlide(); numberPhoto(6)" class="cats" alt="cats">
+      </div>      
+    </div>
+
+    <div id="gallery" class="show">
+      <div class="close" onclick="closeSlide()">&times;</div>
+      <div class="content">
+         <div class="slider">
+            <img src="/img/Уход за кошкой9.jpg" style="width: 100%">
+         </div>
+         <div class="slider">
+            <img src="/img/Уход за кошкой8.jpg" style="width: 100%">
+         </div>
+         <div class="slider">
+            <img src="/img/Уход за кошкой3.jpg" style="width: 100%">
+         </div>
+         <div class="slider">
+            <img src="/img/Уход за кошкой6.jpg" style="width: 100%">
+         </div>
+         <div class="slider">
+            <img src="/img/Уход за кошкой5.jpg" style="width: 100%">
+         </div>
+         <div class="slider">
+            <img src="/img/Уход за кошкой4.jpg" style="width: 100%">
+         </div>       
+      
+         <a class="prev" onclick="plusPhoto(-1)">&#10094;</a>
+         <a class="next" onclick="plusPhoto(1)">&#10095;</a>
+
+         <div class="column">
+            <img class="demo" src="/img/Уход за кошкой9.jpg" onclick="numberPhoto(1)" alt="cats">
+         </div>
+         <div class="column">
+            <img class="demo" src="/img/Уход за кошкой8.jpg" onclick="numberPhoto(2)" alt="cats">
+         </div>
+         <div class="column">
+            <img class="demo" src="/img/Уход за кошкой3.jpg" onclick="numberPhoto(3)" alt="cats">
+         </div>
+         <div class="column">
+            <img class="demo" src="/img/Уход за кошкой6.jpg" onclick="numberPhoto(4)" alt="cats">
+         </div>
+         <div class="column">
+            <img class="demo" src="/img/Уход за кошкой5.jpg" onclick="numberPhoto(5)" alt="cats">
+         </div>
+         <div class="column">
+            <img class="demo" src="/img/Уход за кошкой4.jpg" onclick="numberPhoto(6)" alt="cats">
+         </div>         
+      </div>
+    </div>
     <section class="container">
         <img src="/img/britanskaya-korotkosherstnaya.jpg" alt="British Shorthair" width="150px" height="150px">
         <div>
